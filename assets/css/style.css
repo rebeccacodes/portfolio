@@ -1336,6 +1336,10 @@ blockquote h6 {
     overflow: hidden;
 }
 
+.card-img {
+    width: 200px;
+}
+
 .card-columns .card {
     margin-bottom: 1.25rem;
 }
@@ -1364,7 +1368,6 @@ blockquote h6 {
     border: none;
 }
 
-.ts-card__image {}
 
 /*-------------------------------------------
   -- Circle
@@ -1511,6 +1514,10 @@ form.ts-labels-inside-input .form-group label.focused,
     background-color: transparent;
 }
 
+.ts-gallery__item {
+    height: 300px;
+}
+
 .ts-gallery .ts-gallery__item .ts-gallery__item-description {
     background-color: rgba(0, 0, 0, .8);
     backface-visibility: hidden;
@@ -1548,6 +1555,10 @@ form.ts-labels-inside-input .form-group label.focused,
     transform: scale(1) rotate(0deg);
     backface-visibility: hidden;
     transition: .8s ease;
+}
+
+.ts-gallery__image {
+    text-align: center;
 }
 
 /*-------------------------------------------
@@ -1714,6 +1725,10 @@ body.has-loading-screen.loading-done:before {
 body.has-loading-screen.loading-done:after {
     transform: scale(0);
     opacity: 0;
+}
+
+.center-content {
+    text-align: center;
 }
 
 /*-------------------------------------------
@@ -2607,6 +2622,8 @@ E. Template Specific Elements
     .ts-promo-number figure {
         font-size: 2.375rem;
     }
+
+  
 }
 
 @media (min-width: 48rem) and (max-width: 61.9375rem) {
@@ -2759,6 +2776,11 @@ E. Template Specific Elements
     .ts-promo-number figure {
         font-size: 2.25rem;
     }
+
+    .ts-gallery__item {
+        height: 260px;
+    }
+
 }
 
 @media (min-width: 36rem) and (max-width: 61.9375rem) {
@@ -2771,6 +2793,10 @@ E. Template Specific Elements
     }
     .ts-block-inside {
         padding: 2.5rem;
+    }
+
+    .card-img {
+        width: 150px;
     }
 }
 
