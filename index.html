@@ -190,7 +190,7 @@
                                     <div class="ts-item-body">
                                         <h4>Memory Match Game</h4>
                                         <p class="mb-0">
-                                            A matching game built with React.js, Redux, Materialize and Firebase
+                                            A matching game built with HTML5, CSS3, Bootstrap, Javascript and jQuery
                                         </p>
                                     </div>
                                     <!--end ts-item-body-->
@@ -288,13 +288,15 @@
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/github.png" class="card-img" alt="">
+                                <a href="https://github.com/" target="_blank"><img src="assets/img/github.png" class="card-img"
+                                        alt="Github Logo"></a>
                             </div>
                         </div>
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/php.png" class="card-img" alt="">
+                                <a href="http://www.php.net/" target="_blank"></a> <img src="assets/img/php.png" class="card-img"
+                                    alt="PHP Logo">
                             </div>
                         </div>
 
@@ -308,15 +310,16 @@
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/html.png" class="card-img" alt="">
-
+                                <a href="https://dev.w3.org/html5/html-author/" target="_blank"><img src="assets/img/html.png"
+                                        class="card-img" alt="HTML5 Logo"></a>
                             </div>
                         </div>
 
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/jquery.png" class="card-img" alt="">
+                                <a href="https://jquery.com/" target="_blank"><img src="assets/img/jquery.png" class="card-img"
+                                        alt="jQuery Logo"></a>
                             </div>
                         </div>
 
@@ -330,14 +333,16 @@
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/firebase.png" class="card-img" alt="">
+                                <a href="https://firebase.google.com/" target="_blank"><img src="assets/img/firebase.png"
+                                        class="card-img" alt="Firebase Logo"></a>
                             </div>
                         </div>
 
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/mysql.png" class="card-img" alt="">
+                                <a href="https://www.mysql.com/" target="_blank"><img src="assets/img/mysql.png" class="card-img"
+                                        alt="MySQL Logo"></a>
                             </div>
                         </div>
 
@@ -350,7 +355,8 @@
 
                         <div class="card ts-gallery__item">
                             <div class="ts-gallery__image">
-                                <img src="assets/img/git.png" class="card-img" alt="">
+                                <a href="https://git-scm.com/" target="_blank"><img src="assets/img/git.png" class="card-img"
+                                        alt="Git Logo"></a>
                             </div>
                         </div>
 
@@ -359,56 +365,7 @@
                 </div>
                 <!--end container-->
             </section>
-            <!--end portfolio-->
-
-            <!-- <section id="testimonials" class="ts-block text-center pb-5">
-                <div class="container">
-                    <div class="ts-title">
-                        <h2>Testimonials</h2>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="owl-carousel" data-owl-dots="1" data-owl-loop="1" data-animate="ts-fadeInUp">
-                                <div class="slide mb-5">
-                                    <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
-                                        <i class="fa fa-quote-right"></i>
-                                    </figure>
-                                    <p class="ts-h5">
-                                        In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien
-                                        faucibus fermentum ut vel diam. Nullam tempus,
-                                        nunc id efficitur sagittis
-                                    </p>
-                                    <div class="ts-circle__lg mb-3" data-bg-image="assets/img/person.jpg"></div>
-                                    <h5>Jane Doe</h5>
-                                    <h6 class="ts-opacity__40">Bristol Creative</h6>
-                                </div>
-                               
-                                <div class="slide mb-5">
-                                    <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
-                                        <i class="fa fa-quote-right"></i>
-                                    </figure>
-                                    <p class="ts-h5">
-                                        Nam egestas porta posuere. Nunc velit lorem, vestibulum vitae massa nec,
-                                        lacinia dictum ligula. Quisque scelerisque nec dolor
-                                        id convallis. Vestibulum porta ipsum pretium turpis rhoncus, non fringilla
-                                        ipsum
-                                        mattis.
-                                    </p>
-                                    <div class="ts-circle__lg mb-3" data-bg-image="assets/img/person-02.jpg"></div>
-                                    <h5>John Brown</h5>
-                                    <h6 class="ts-opacity__40">ABC Architects</h6>
-                                </div>
-                              
-                            </div>
-                           
-                        </div>
-                       
-                    </div>
-                  
-                </div>
-               
-            </section> -->
+            <!--end skills-->
 
         </main>
         <!--end #content-->
@@ -475,7 +432,7 @@
                             <div class="col-md-8">
                                 <h3>Send Me a Message</h3>
                                 <form id="form-contact" method="post" class="clearfix ts-form ts-form-email"
-                                    data-php-path="assets/php/email.php">
+                                    data-php-path="php_mailer/phpmailer/PHPMailer/mail_handler.php">
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
@@ -638,8 +595,7 @@
                                         <h4 class="mb-3">MEMORY MATCH</h4>
                                         <p>
                                             A mobile responsive version of the classic memory matching game utilizing
-                                            HTML5, CSS3, Javascript and jQuery for the front end and Firebase for the
-                                            backend to enable remote two player functionality.
+                                            HTML5, CSS3, Javascript and jQuery.
                                         </p>
                                         <a href="https://match.rebeccacodes.com" class="mb-4 text-dark d-block">
                                             <i class="fa fa-globe ts-opacity__50 mr-2"></i>
@@ -649,8 +605,8 @@
                                         <h6>Technologies Utilized</h6>
                                         <ul class="list-unstyled ts-opacity__50">
                                             <li>HTML5/CSS3</li>
-                                            <li>Javascript/jQuery</li>
-                                            <li>Firebase</li>
+                                            <li>Javascript</li>
+                                            <li>jQuery</li>
                                         </ul>
                                     </div>
                                     <!--end col-md-8-->
