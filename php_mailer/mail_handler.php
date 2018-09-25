@@ -32,23 +32,23 @@ if(empty($message['email'])) {
 
 //sanitize subject
 $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
-// if(empty($message['subject'])) {
-//     $output['success'] = false;
-//     $output['messages'][] = "missing subject key";
-// }
+if(empty($message['subject'])) {
+    $output['success'] = false;
+    $output['messages'][] = "missing subject key";
+}
 
 //sanitize phone number
-$message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
-if(empty($message['phone']) && count($message['phone']) >= 10 && count($message['phone']) <=11) {
-    $output['success'] = false;
-    $output['messages'][] = "missing phone key";
-}
+// $message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
+// if(empty($message['phone']) && count($message['phone']) >= 10 && count($message['phone']) <=11) {
+//     $output['success'] = false;
+//     $output['messages'][] = "missing phone key";
+// }
 
-if($output['success'] !==null) {
-    http_response_code(422);
-    echo json_encode($output);
-    exit();
-}
+// if($output['success'] !==null) {
+//     http_response_code(422);
+//     echo json_encode($output);
+//     exit();
+// }
 
 $mail = new PHPMailer;
 $mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
