@@ -25,7 +25,7 @@ if(empty($message['email'])) {
 
 //sanitize message
 $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-if(empty($message['email'])) {
+if(empty($message['message'])) {
     $output['success'] = false;
     $output['messages'][] = "missing email key";
 }
