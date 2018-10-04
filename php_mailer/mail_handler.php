@@ -27,7 +27,7 @@ if(empty($message['email'])) {
 $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 if(empty($message['message'])) {
     $output['success'] = false;
-    $output['messages'][] = "missing email key";
+    $output['messages'][] = "missing message key";
 }
 
 //sanitize subject
@@ -100,5 +100,6 @@ if(!$mail->send()) {
 } else {
     $output['success'] = true;
 }
+
 echo json_encode($output);
 ?>
