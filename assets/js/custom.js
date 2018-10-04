@@ -279,7 +279,7 @@ $(document).ready(function ($) {
             submitHandler: function () {
                 $button.addClass("processing");
                 $.post(pathToPhp, $form.serialize(), function (response) {
-                    $button.addClass("done").find(".status").append('Message Sent!').prop("disabled", true);
+                    $button.addClass("done").find(".status").append('<i class="fas fa-check-circle"></i>').prop("disabled", true);
                     $form.find("input[type=text], input[type=email], textarea").val("");
                     $('#test').remove();
                     // $('#form-contact-submit').html("Message Sent");
