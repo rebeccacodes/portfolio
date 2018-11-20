@@ -6,6 +6,7 @@ var resizeId;
 $(document).ready(function ($) {
     "use strict";
 
+
     $(".ts-bubble-border").each(function () {
         var $this = $(this);
         $this.prepend("<i></i><i></i><i></i><i></i><i></i>");
@@ -309,9 +310,11 @@ $(document).ready(function ($) {
     $(window).on("scroll", function () {
         if ($(window).scrollTop() >= $(window).height()) {
             $(".navbar").addClass("in");
+            $('#navbarNavAltMarkup').removeClass('show');
         }
         else {
             $(".navbar").removeClass("in");
+            $('#navbarNavAltMarkup').removeClass('show');
         }
     });
 
@@ -372,5 +375,6 @@ function getScrollBarWidth() {
     $outer.remove();
     return 100 - widthWithScroll;
 }
+
 
 
